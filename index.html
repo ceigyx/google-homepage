@@ -9,18 +9,25 @@
     <link rel="icon" href="assets/google-favicon.png" type="image/icon type">
 </head>
 <body>
-    <p>Test</p>
+    <script>
+        function search(isLucky) {
+            var query = document.getElementById('inputBox').value;
+            if (query) {
+                window.open('https://google.com/search?q=' + query + (isLucky? isLucky : ''), '_self')
+            }
+        }
+    </script>
     <div>
            <img src="assets/GOOGLE.png">
     </div>
     <div>
-        <form action="#" onsubmit="window.open('https://google.com/search?q=' + document.getElementById('input').value, '_self'); return">
+        <form action="#" id="searchForm" onsubmit="search(); return false">
             <div>
-                <input id="input" type="text">
+                <input id="inputBox" type="text">
             </div>
             <div>
-                <input type="button" id="search" value="Google Search" onclick="window.open('https://google.com/search?q=' + document.getElementById('input').value, '_self')">
-                <input type="button" id="lucky" value="I'm Feeling Lucky" onclick="window.open('https://google.com/search?q=' + document.getElementById('input').value + '&btnI=I%27m+Feeling+Lucky', '_self')">
+                <input type="button" id="searchButton" value="Google Search" onclick="search()">
+                <input type="button" id="luckyButton" value="I'm Feeling Lucky" onclick="search('&btnI=I%27m+Feeling+Lucky')">
             </div>
         </form>
     </div>
