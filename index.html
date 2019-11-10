@@ -18,49 +18,55 @@
         }
     </script>
     <nav>
-        <a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a>
-        <a href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a>
-        <a href="https://www.google.com/intl/en-GB/gmail/about/#">Gmail</a>
-        <a href="https://www.google.ca/imghp?hl=en&tab=wi&ogbl">Images</a>
-        <a class="popUp" id="apps" onclick="window.alert('function unavailable')" href="#">Google apps</a>
-        <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.ca%2Fimghp%3Fhl%3Den%26tab%3Dwi%26ogbl&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
+        <span class="left">
+            <a class="headerLink linkLeftHead" href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="headerLink linkLeftHead" href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a>
+        </span>
+        <span class="right">
+            <a class="headerLink linkRightHead" href="https://www.google.com/intl/en-GB/gmail/about/#">Gmail</a>
+            <a class="headerLink linkRightHead" href="https://www.google.ca/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <a class="headerLink linkRightHead" id="apps" onclick="window.alert('feature unavailable')" href="#">
+                <img id="appsIcon" src="assets/google-apps-icon.png">
+            </a>
+            <a id="signInButton" class="linkRightHead" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.ca%2Fimghp%3Fhl%3Den%26tab%3Dwi%26ogbl&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
+        </span>
     </nav>
-    <div id="logo">
-           <img src="assets/GOOGLE.png">
-    </div>
-    <div class="searchArea">
-        <form action="#" id="searchForm" onsubmit="search(); return false">
-            <div id="searchAreaInputContainer">
-                <span id="svgContainer">
-                    <svg class="searchLogo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-                </span>
-                <input id="searchAreaInput" type="text">
-                <a id='voiceSearch' href="">
-                    <img class="searchLogo" src="assets/mic.png">
-                </a>
-            </div>
-            <div id="searchAreaButtonContainer">
-                <input type="button" class="searchAreaButton" value="Google Search" onclick="search()">
-                <input type="button" class="searchAreaButton" value="I'm Feeling Lucky" onclick="search('&btnI=I%27m+Feeling+Lucky')">
-            </div>
-        </form>
+    <div id="searchSection">
+        <div id="logo">
+               <img src="assets/GOOGLE.png">
+        </div>
+        <div id="searchArea">
+            <form action="#" id="searchForm" onsubmit="search(); return false">
+                <div id="searchAreaInputContainer">
+                    <span id="svgContainer">
+                        <svg class="searchLogo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                    </span>
+                    <input id="searchAreaInput" type="text">
+                    <a id='voiceSearch' href="">
+                        <img class="searchLogo" src="assets/mic.png">
+                    </a>
+                </div>
+                <div id="searchAreaButtonContainer">
+                    <input type="button" class="searchAreaButton" value="Google Search" onclick="search()">
+                    <input type="button" class="searchAreaButton" value="I'm Feeling Lucky" onclick="search('&btnI=I%27m+Feeling+Lucky')">
+                </div>
+            </form>
+        </div>
     </div>
     <footer>
         <div id="location" class="footerBar">
-            <span id="locationText">Canada</span>
+            <span>Canada</span>
         </div>
-        <div class="footerBar">
-            <span>
-                <a href="https://ads.google.com/intl/en_ca/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
-                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
-            </span>
-            <span>
-                <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
-                <a href="https://policies.google.com/terms?fg=1">Terms</a>
-                <a class="popUp" id="settings" onclick="window.alert('function unavailable')" href="#">Settings</a>
-            </span>
-        </div>
+        <span class="footerBar left">
+                <a class="footerLink linkLeftFoot" href="https://ads.google.com/intl/en_ca/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="footerLink linkLeftFoot" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+                <a class="footerLink linkLeftFoot" href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        </span>
+        <span class="footerBar right">
+                <a class="footerLink linkRightFoot" href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                <a class="footerLink linkRightFoot" href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a class="footerLink linkRightFoot" class="popUp" id="settings" onclick="window.alert('feature unavailable')" href="#">Settings</a>
+        </span>
     </footer>
 </body>
 </html>
