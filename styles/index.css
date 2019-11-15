@@ -76,7 +76,6 @@ nav {
     box-shadow: none;
     border-radius: 24px;
     display: flex;
-    flex: 1;
     margin: auto;
     width: 582px;
     height: 44px;
@@ -85,10 +84,9 @@ nav {
 
 #searchAreaInput {
     border: none;
-    margin: auto;
     width: 90%;
     height: 90%;
-    margin: auto 40px;
+    margin: auto;
     -webkit-tap-highlight-color: transparent;
     font: 16px arial,sans-serif;
 }
@@ -178,7 +176,7 @@ footer {
 }
 
 .linkRightHead {
-    margin-right: 15px;
+    margin-right: 3%;
 }
 
 .linkRightFoot {
@@ -186,7 +184,7 @@ footer {
 }
 
 .linkLeftHead {
-    margin-left: 15px;
+    margin-left: 3%;
 }
 
 .linkLeftFoot {
